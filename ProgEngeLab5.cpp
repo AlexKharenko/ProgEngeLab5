@@ -3,5 +3,7 @@
 
 int main()
 {
-	
+	Parser t;
+	t.read();
+	t.calculator();
 }

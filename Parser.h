@@ -1,9 +1,11 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include <unordered_map>
 #include <queue>
 #include <stack>
+#include <string>
+#include <unordered_map>  
+#include <fstream>
 
 using namespace std;
 
@@ -11,23 +13,16 @@ class Parser
 {
 	vector<string> oper={"*", "/", "+", "-"};
 	queue<string> expresion;
-	queue<string> tree;
-	unordered_map<string, double> values;
+	vector<string> tree;
+	vector<pair<string, double>> values;
 	stack<string> opStack;
+	double result;
+	int find(string other);
 	bool is_num(string other);
 	bool higher_precedence(string other);
+	void shunting_yard_algo();
 public:
-	void shuting_yard_algo();
+	void read();
+	void calculator();
 };
 
-struct TokenBase {
-	virtual ~TokenBase() {}
-};
-
-template<class T> class Token : public TokenBase {
-public:
-	Token(T t) : val(t) {}
-	T val;
-};
-
-typedef queue<TokenBase*> TokenQueue;

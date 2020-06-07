@@ -1,2 +1,4 @@
-﻿  ProgEngeLab5.cpp
+﻿  Parser.cpp
+C:\Users\Семья\Desktop\Alexey\Учёба\GitHub\ProgEngeLab5\Parser.cpp(6,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Семья\Desktop\Alexey\Учёба\GitHub\ProgEngeLab5\Parser.cpp(17,20): warning C4018: <: несоответствие типов со знаком и без знака
   ProgEngeLab5.vcxproj -> C:\Users\Семья\Desktop\Alexey\Учёба\GitHub\ProgEngeLab5\Debug\ProgEngeLab5.exe
